@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pranav Nivas — Graphic Designer & Video Editor</title>
+<meta name="description" content="Portfolio of Pranav Nivas — Graphic Designer and Video Editor with 2.5+ years of professional creative experience.">
+<style>
+:root {
+  --navy:#0c1b37; --navy2:#13284e; --orange:#f55c26; --ink:#162033;
+  --muted:#667085; --line:#e7eaf0; --paper:#f7f8fa; --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+a{color:inherit;text-decoration:none}
+.nav{position:sticky;top:0;z-index:20;background:rgba(12,27,55,.94);backdrop-filter:blur(14px);color:white;border-bottom:1px solid rgba(255,255,255,.1)}
+.navin{max-width:1180px;margin:auto;padding:15px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:800;letter-spacing:.04em}
+.logo span{color:var(--orange)}
+.navlinks{display:flex;gap:22px;font-size:14px;color:#dce4f2}
+.navlinks a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,var(--navy),#0f2b5b 60%,#173b6e);color:white;min-height:72vh;display:flex;align-items:center}
+.hero-in{max-width:1180px;width:100%;margin:auto;padding:92px 24px 80px;display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.kicker{color:#ff8a60;text-transform:uppercase;font-weight:800;letter-spacing:.14em;font-size:13px}
+h1{font-size:clamp(48px,7vw,88px);line-height:.95;margin:14px 0 22px;letter-spacing:-.055em}
+.hero h1 span{color:var(--orange)}
+.hero p{max-width:650px;color:#cbd6e8;font-size:18px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;font-weight:750;border:1px solid rgba(255,255,255,.2)}
+.btn.primary{background:var(--orange);border-color:var(--orange);color:white}
+.btn.secondary{color:white;background:rgba(255,255,255,.06)}
+.hero-visual{position:relative;height:470px;max-width:480px;margin-left:auto}
+.visual-frame{position:absolute;border:1px solid rgba(255,255,255,.18);border-radius:28px;display:flex;align-items:flex-end;padding:28px;overflow:hidden;background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.015));box-shadow:0 28px 60px rgba(0,0,0,.18)}
+.visual-frame span{font-size:clamp(30px,4vw,54px);font-weight:900;letter-spacing:-.05em;color:rgba(255,255,255,.92)}
+.frame-one{width:270px;height:340px;right:150px;top:35px;transform:rotate(-7deg)}
+.frame-two{width:270px;height:340px;right:45px;top:85px;transform:rotate(7deg);background:linear-gradient(145deg,rgba(245,92,38,.22),rgba(255,255,255,.02))}
+.frame-three{width:270px;height:340px;right:95px;top:120px;transform:rotate(1deg);background:linear-gradient(145deg,rgba(30,66,120,.75),rgba(255,255,255,.02))}
+.visual-orb{position:absolute;width:220px;height:220px;border-radius:50%;right:65px;top:115px;background:radial-gradient(circle at 35% 30%,rgba(245,92,38,.9),rgba(245,92,38,.15) 48%,transparent 70%);filter:blur(2px);opacity:.75}
+.section{max-width:1180px;margin:auto;padding:88px 24px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:30px}
+.eyebrow{color:var(--orange);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:42px;letter-spacing:-.04em;line-height:1.05;margin:8px 0 0;color:var(--navy)}
+.lead{max-width:620px;color:var(--muted)}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:start}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.quick-facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.quick-facts div{background:white;border:1px solid var(--line);border-radius:14px;padding:15px}
+.quick-facts strong{display:block;color:var(--navy);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+.quick-facts span{display:block;color:var(--muted);font-size:14px;margin-top:3px}
+.timeline{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.timeline-card{background:white;border:1px solid var(--line);border-radius:20px;padding:26px}
+.timeline-card .date{color:var(--orange);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.timeline-card h3{font-size:22px;color:var(--navy);margin:8px 0 4px}
+.timeline-card h4{font-size:15px;margin:0 0 15px;color:var(--muted)}
+.timeline-card ul{margin:0;padding-left:20px;color:var(--muted)}
+.timeline-card li{margin:7px 0}
+.edu-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;margin-top:22px}
+.mini-card{background:white;border:1px solid var(--line);border-radius:20px;padding:25px}
+.mini-card h3{margin:0 0 8px;color:var(--navy)}
+.mini-card p{margin:6px 0;color:var(--muted)}
+
+.skill{background:white;border:1px solid var(--line);border-radius:14px;padding:17px;font-weight:750}
+.workgrid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.card{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(13,27,55,.04)}
+.card img{display:block;width:100%;height:100%;object-fit:cover}
+.design-card{grid-column:span 4}
+.design-card.tall{grid-column:span 4}
+.design-card .media{aspect-ratio:4/5;background:#eee}
+.card-body{padding:18px}
+.card h3{font-size:18px;margin:0 0 5px;color:var(--navy)}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.video-card{background:var(--navy);border-radius:20px;overflow:hidden;color:white}
+.video-card video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#081226}
+.video-drive{display:block;text-decoration:none;color:white}
+.video-link-preview{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;gap:16px;background:linear-gradient(135deg,#0c1b37,#173b6e);border-bottom:1px solid rgba(255,255,255,.08)}
+.video-link-preview strong{display:block;font-size:18px}
+.video-link-preview span{display:block;color:#b9c7dc;font-size:13px;margin-top:3px}
+.play-circle{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--orange);font-size:22px;padding-left:3px;box-shadow:0 10px 30px rgba(245,92,38,.3)}
+.video-drive:hover .video-link-preview{background:linear-gradient(135deg,#10254b,#1c477f)}
+
+.video-card .card-body{padding:20px}
+.video-card h3{color:white}
+.video-card p{color:#b9c7dc}
+.tag{display:inline-block;margin-top:12px;padding:5px 9px;border-radius:999px;background:rgba(245,92,38,.14);color:#ff9a76;font-size:12px;font-weight:800}
+.branding{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px}
+.brand-logo,.brand-collateral{background:white;border:1px solid var(--line);border-radius:20px;padding:28px}
+.brand-logo img{width:100%;max-height:220px;object-fit:contain}
+.brand-collateral img{width:100%;display:block}
+.multibrand{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.multibrand .card .media{aspect-ratio:4/5}
+.quote{background:var(--navy);color:white;border-radius:24px;padding:50px}
+.quote p{font-size:26px;line-height:1.3;margin:0;max-width:900px}
+.quote small{display:block;color:#b9c7dc;margin-top:18px}
+.footer{background:var(--navy);color:white;padding:60px 24px}
+.footer-in{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.footer h2{color:white;font-size:38px}
+.muted{color:#b9c7dc}
+@media(max-width:800px){
+ .navlinks{display:none}
+ .hero-in,.about,.branding,.timeline,.edu-grid{grid-template-columns:1fr}
+ .hero-visual{max-width:620px;width:100%}
+ .design-card{grid-column:span 6}
+ .video-grid{grid-template-columns:1fr}
+ .multibrand{grid-template-columns:1fr 1fr}
+ .section{padding:65px 20px}
+}
+@media(max-width:520px){
+ h2{font-size:34px}
+ .design-card{grid-column:span 12}
+ .multibrand{grid-template-columns:1fr}
+ .skills,.quick-facts{grid-template-columns:1fr}
+ .hero-in{padding-top:70px}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="navin">
+    <div class="logo">PRANAV <span>NIVAS</span></div>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#video">Video</a><a href="#design">Design</a><a href="#branding">Branding</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-in">
+    <div>
+      <div class="kicker">Graphic Designer · Video Editor</div>
+      <h1>Design that<br><span>moves.</span></h1>
+      <p>Graphic Designer, Multimedia Creator and Social Media Marketer with 2+ years of experience across branding, video editing, photography, motion graphics and digital marketing.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#video">View Video Work</a>
+        <a class="btn secondary" href="#design">View Design Work</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="visual-frame frame-one"><span>DESIGN</span></div>
+      <div class="visual-frame frame-two"><span>MOTION</span></div>
+      <div class="visual-frame frame-three"><span>VIDEO</span></div>
+      <div class="visual-orb"></div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="section">
+  <div class="about">
+    <div>
+      <div class="eyebrow">01 · Profile</div>
+      <h2>A creative generalist with a commercial mindset.</h2>
+      <p class="lead">Creative and versatile Graphic Designer, UX Designer and Multimedia Creator with over 2 years of experience across branding, video editing, videography, photography and social media marketing.</p>
+      <p class="lead">I enjoy turning campaign requirements into clear, engaging visuals—from social-media creatives and promotional videos to brand collateral and product communication.</p>
+      <div class="quick-facts">
+        <div><strong>Based in</strong><span>Coimbatore, Tamil Nadu</span></div>
+        <div><strong>Experience</strong><span>2+ years · Lotus Hyundai</span></div>
+        <div><strong>Education</strong><span>B.E. Automobile Engineering</span></div>
+        <div><strong>Language</strong><span>English · Professional</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow">Skills & Tools</div>
+      <div class="skills">
+        <div class="skill">Brand Identity & Guidelines</div>
+        <div class="skill">Social Media Creatives</div>
+        <div class="skill">Video Editing & Videography</div>
+        <div class="skill">Motion Graphics & Reels</div>
+        <div class="skill">Photography & Retouching</div>
+        <div class="skill">UX/UI & Wireframing</div>
+        <div class="skill">Meta Ads & Campaigns</div>
+        <div class="skill">Content Calendar Planning</div>
+        <div class="skill">Adobe Photoshop</div>
+        <div class="skill">Adobe Illustrator</div>
+        <div class="skill">Adobe Premiere Pro</div>
+        <div class="skill">Adobe After Effects</div>
+        <div class="skill">Figma & Adobe XD</div>
+        <div class="skill">Lightroom</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <div class="section-head">
+    <div><div class="eyebrow">02 · Experience</div><h2>Professional experience.</h2></div>
+    <p class="lead">End-to-end creative production, social media and campaign work at Lotus Hyundai, Coimbatore.</p>
+  </div>
+  <div class="timeline">
+    <article class="timeline-card">
+      <div class="date">January 2024 — Present · 2+ years</div>
+      <h3>Graphic Designer & Social Media Marketer</h3>
+      <h4>Lotus Hyundai · Coimbatore</h4>
+      <ul>
+        <li>Developed brochures, social-media graphics, packaging and promotional videos.</li>
+        <li>Shot and edited videos for marketing campaigns, product showcases and social content.</li>
+        <li>Created photography for product, event and lifestyle brand assets.</li>
+        <li>Managed social pages, planned content calendars and maintained a consistent brand voice.</li>
+        <li>Ran targeted Meta campaigns, tracked reach, CTR and conversions, and optimized performance.</li>
+        <li>Edited reels, advertisements and YouTube content with a focus on storytelling and engagement.</li>
+        <li>Handled multiple creative projects simultaneously while meeting tight deadlines.</li>
+      </ul>
+    </article>
+    <article class="timeline-card">
+      <div class="date">Selected strengths</div>
+      <h3>Concept → Production → Delivery</h3>
+      <h4>Creative production workflow</h4>
+      <ul>
+        <li>Independently handled end-to-end creative production for a leading automotive dealership.</li>
+        <li>Built consistent visual communication across digital and print platforms.</li>
+        <li>Collaborated with marketing and product teams to create engaging brand stories.</li>
+        <li>Worked directly with clients to understand requirements and translate ideas into creative output.</li>
+        <li>Balanced graphics, video, photography and digital marketing in a high-volume environment.</li>
+      </ul>
+    </article>
+  </div>
+  <div class="edu-grid">
+    <div class="mini-card">
+      <div class="eyebrow">Education</div>
+      <h3>Bachelor of Engineering — Automobile Engineering</h3>
+      <p>Rajiv Gandhi College of Engineering · Graduated August 2021 · CGPA 7.9</p>
+      <p><strong>Final Year Project:</strong> Analysed material changes on fuel rails in crash analysis using ANSYS and improved the design for better crash simulation results.</p>
+    </div>
+    <div class="mini-card">
+      <div class="eyebrow">Certifications</div>
+      <h3>Additional learning</h3>
+      <p>Google UX Design Certificate</p>
+      <p>Web Design Certificate — Greens Technology</p>
+    </div>
+  </div>
+</section>
+
+<section id="video" class="section">
+  <div class="section-head">
+    <div><div class="eyebrow">03 · Video & Motion</div><h2>Work that moves.</h2></div>
+    <p class="lead">Selected commercial edits, motion graphics, event coverage and a personal motion project. Videos are playable directly on this page.</p>
+  </div>
+  <div class="video-grid">
+
+    <article class="video-card">
+      <a class="video-drive" href="https://drive.google.com/file/d/1BVl_9NKqKxQ9VgnnCr_ZE7zQtDI0TwaH/view?usp=drive_link" target="_blank" rel="noopener"><div class="video-link-preview">
+        <div class="play-circle">▶</div>
+        <div><strong>Watch project</strong><span>Opens in Google Drive</span></div>
+      </div></a>
+      <div class="card-body"><h3>Creta EV — Feature Highlight</h3><p>Motion Graphics · After Effects + Premiere Pro</p><span class="tag">VIDEO</span></div>
+    </article>
+
+    <article class="video-card">
+      <a class="video-drive" href="https://drive.google.com/file/d/1Lx1PNpFYijl31NH4gANGeVk2ur61JB56/view?usp=sharing" target="_blank" rel="noopener">
+        <div class="video-link-preview">
+          <div class="play-circle">▶</div>
+          <div><strong>Watch project</strong><span>Opens in Google Drive</span></div>
+        </div>
+      </a>
+      <div class="card-body"><h3>Verna — Product Reel</h3><p>Commercial · Social Media</p><span class="tag">VIDEO</span></div>
+    </article>
+
+    <article class="video-card">
+      <a class="video-drive" href="https://drive.google.com/file/d/1qkZAGEdHgM4fOkz6Whg_hgAQpETLVWz5/view?usp=drive_link" target="_blank" rel="noopener"><div class="video-link-preview">
+        <div class="play-circle">▶</div>
+        <div><strong>Watch project</strong><span>Opens in Google Drive</span></div>
+      </div></a>
+      <div class="card-body"><h3>Exter — Product Reel</h3><p>Commercial · Social Media</p><span class="tag">VIDEO</span></div>
+    </article>
+
+    <article class="video-card">
+      <a class="video-drive" href="https://drive.google.com/file/d/1rd5JDktyOxjt_ZavFTqdQQgIqZQoVQK3/view?usp=drive_link" target="_blank" rel="noopener">
+        <div class="video-link-preview">
+          <div class="play-circle">▶</div>
+          <div><strong>Watch project</strong><span>Opens in Google Drive</span></div>
+        </div>
+      </a>
+      <div class="card-body"><h3>Certa Rally — Event Video</h3><p>Event Coverage · Storytelling</p><span class="tag">VIDEO</span></div>
+    </article>
+
+    <article class="video-card">
+      <a class="video-drive" href="https://drive.google.com/file/d/16A7atxC7-7pcChKydM7GyYDctrQvbSkc/view?usp=drive_link" target="_blank" rel="noopener"><div class="video-link-preview">
+        <div class="play-circle">▶</div>
+        <div><strong>Watch project</strong><span>Opens in Google Drive</span></div>
+      </div></a>
+      <div class="card-body"><h3>Aadi 18 — Delivery Video</h3><p>Customer Delivery · Event Content</p><span class="tag">VIDEO</span></div>
+    </article>
+
+    <article class="video-card">
+      <a class="video-drive" href="https://drive.google.com/file/d/1Pz9OM1TJTlU-yhewYyItAcHy807-cfe4/view?usp=drive_link" target="_blank" rel="noopener">
+        <div class="video-link-preview">
+          <div class="play-circle">▶</div>
+          <div><strong>Watch project</strong><span>Opens in Google Drive</span></div>
+        </div>
+      </a>
+      <div class="card-body"><h3>Delivery Pradhap</h3><p>Commercial Delivery Content</p><span class="tag">VIDEO</span></div>
+    </article>
+
+    <article class="video-card">
+      <a class="video-drive" href="https://drive.google.com/file/d/1jwd-ZOY1v1TKFjVFdZ_8hkCB6FIDH2Tc/view?usp=drive_link" target="_blank" rel="noopener"><div class="video-link-preview">
+        <div class="play-circle">▶</div>
+        <div><strong>Watch project</strong><span>Opens in Google Drive</span></div>
+      </div></a>
+      <div class="card-body"><h3>Wedding Invitation</h3><p>Personal Motion Project</p><span class="tag">VIDEO</span></div>
+    </article>
+
+  </div>
+</section>
+
+<section id="design" class="section">
+  <div class="section-head">
+    <div><div class="eyebrow">04 · Graphic Design</div><h2>Commercial campaigns.</h2></div>
+    <p class="lead">Selected advertising and social-media creatives across automotive, festival, corporate and product communication.</p>
+  </div>
+  <div class="workgrid">
+
+    <article class="card design-card">
+      <div class="media"><img src="assets/last%202%20days%20and%20price%20hike%2003.jpg" alt="Buy Before Price Hike"></div>
+      <div class="card-body"><h3>Buy Before Price Hike</h3><p>Campaign · Automotive</p></div>
+    </article>
+
+    <article class="card design-card">
+      <div class="media"><img src="assets/XXX%20Creta%2001.jpg" alt="Creta Offer Campaign"></div>
+      <div class="card-body"><h3>Creta Offer Campaign</h3><p>Promotion · Automotive</p></div>
+    </article>
+
+    <article class="card design-card">
+      <div class="media"><img src="assets/Corprate%20A3.jpg" alt="Corporate Professionals"></div>
+      <div class="card-body"><h3>Corporate Professionals</h3><p>Targeted Campaign · B2B</p></div>
+    </article>
+
+    <article class="card design-card">
+      <div class="media"><img src="assets/i20%20Insurance%20free%2001.jpg" alt="i20 Free Road Tax"></div>
+      <div class="card-body"><h3>i20 Free Road Tax</h3><p>Product Promotion</p></div>
+    </article>
+
+    <article class="card design-card">
+      <div class="media"><img src="assets/environment%20day%2001(1).jpg" alt="Creta Electric — Environment Day"></div>
+      <div class="card-body"><h3>Creta Electric — Environment Day</h3><p>Brand Communication</p></div>
+    </article>
+
+    <article class="card design-card">
+      <div class="media"><img src="assets/Onam%20Final.jpg" alt="Onam Fest"></div>
+      <div class="card-body"><h3>Onam Fest</h3><p>Festival Campaign</p></div>
+    </article>
+
+    <article class="card design-card">
+      <div class="media"><img src="assets/89a7dbf2-88b9-4d68-a3bd-9411b5e10381.png" alt="Tamil Showroom Campaign"></div>
+      <div class="card-body"><h3>Tamil Showroom Campaign</h3><p>Regional Communication</p></div>
+    </article>
+
+    <article class="card design-card">
+      <div class="media"><img src="assets/69155c1b-be28-49d7-8e1d-96ef174a3a88.png" alt="Creta Benefits"></div>
+      <div class="card-body"><h3>Creta Benefits</h3><p>Product Promotion</p></div>
+    </article>
+
+  </div>
+</section>
+
+<section id="branding" class="section">
+  <div class="section-head">
+    <div><div class="eyebrow">05 · Branding</div><h2>Identity, not just a logo.</h2></div>
+    <p class="lead">Admitra is a personal branding project created for an educational services business, carried through logo and collateral.</p>
+  </div>
+  <div class="branding">
+    <div class="brand-logo">
+      <img src="assets/Admitra.png" alt="Admitra logo">
+      <div class="card-body" style="padding:18px 0 0"><h3>Admitra — Brand Identity</h3><p>Logo concept and visual identity.</p></div>
+    </div>
+    <div class="brand-collateral">
+      <img src="assets/4603f0ba-790f-43bf-9bf2-e8e2153b9a7d.png" alt="Admitra business card">
+      <div class="card-body" style="padding:18px 0 0"><h3>Business Card</h3><p>Identity applied to front and back collateral.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <div><div class="eyebrow">06 · Multi-brand</div><h2>Different brands, different visual languages.</h2></div>
+    <p class="lead">Selected VinFast work and additional commercial design showing adaptation across brand styles and campaign needs.</p>
+  </div>
+  <div class="multibrand">
+
+    <article class="card">
+      <div class="media"><img src="assets/Vinfast%2001%20copy.jpg" alt="VinFast — Product"></div>
+      <div class="card-body"><h3>VinFast — Product</h3><p>Commercial campaign work</p></div>
+    </article>
+
+    <article class="card">
+      <div class="media"><img src="assets/VF6.jpg" alt="VinFast — Features"></div>
+      <div class="card-body"><h3>VinFast — Features</h3><p>Commercial campaign work</p></div>
+    </article>
+
+    <article class="card">
+      <div class="media"><img src="assets/madurai%20invitation%20showroom.jpg" alt="VinFast — Madurai Opening"></div>
+      <div class="card-body"><h3>VinFast — Madurai Opening</h3><p>Commercial campaign work</p></div>
+    </article>
+
+    <article class="card">
+      <div class="media"><img src="assets/bengaluru%20Final&#x27;.jpg" alt="VinFast — Bengaluru Opening"></div>
+      <div class="card-body"><h3>VinFast — Bengaluru Opening</h3><p>Commercial campaign work</p></div>
+    </article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="quote">
+    <div class="eyebrow">Selected Portfolio</div>
+    <p>“A mix of design, editing and motion—built around real commercial briefs and practical communication.”</p>
+    <small>Pranav Nivas · Graphic Designer & Video Editor</small>
+  </div>
+</section>
+
+<footer id="contact" class="footer">
+  <div class="footer-in">
+    <div>
+      <div class="eyebrow">Get in touch</div>
+      <h2>Let's create something<br>worth watching.</h2>
+      <p class="muted">Coimbatore, Tamil Nadu<br>+91 94889 89185 · pranavnivasaug30@gmail.com</p>
+    </div>
+    <div style="align-self:end">
+      <a class="btn primary" href="mailto:pranavnivasaug30@gmail.com">Email Me</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
